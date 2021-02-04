@@ -1,0 +1,47 @@
+SLA0ACT Rev2/November 2018
+Copyright (c) 2018, Actility
+All rights reserved.
+
+BY INSTALLING COPYING, DOWNLOADING, ACCESSING OR OTHERWISE USING THIS SOFTWARE 
+OR ANY PART THEREOF (AND THE RELATED DOCUMENTATION) FROM ACTILITY, THE RECIPIENT, 
+ON BEHALF OF HIMSELF OR HERSELF, OR ON BEHALF OF ANY ENTITY BY WHICH SUCH RECIPIENT 
+IS EMPLOYED AND/OR ENGAGED AGREES TO BE BOUND BY THIS SOFTWARE LICENSE AGREEMENT
+INCLUDING THE LICENSES LISTED AS FOLLOWS: lgz_license.txt AND bspatch_license.txt.
+
+Throughout this agreement, “Software” shall be defined as “FIRMWARE DELTA UPGRADE CLIENT LIBRARY” 
+provided by Actility in source or binary form. “Derivative work” shall refer to modified versions of 
+the Software, implementing changes or improvements to the firmware delta update functionality. 
+For avoidance of doubt, Derivative work does not include the application code developed by a 3rd party 
+and not related to firmware delta update, which links to the Software for the sole purpose of receiving delta firmware upgrades.
+The redistribution, reproduction and use in source and binary forms of the software or any part thereof, with or 
+without modification, are permitted provided that the following conditions are met:
+    * Redistributions of source code (modified or not) must retain any copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of Actility corporation nor the
+      names of its contributors may be used to endorse or promote products
+      derived from this software without specific prior written permission.
+    * This software or any part thereof, including modifications and/or derivative 
+      works of this software, must be used and execute solely and exclusively 
+      in combination with a Network Server and Reliable Multicast server running 
+      Actility software. By no means, it can be used to develop competing products to Actility Reliable Multicast server.
+
+The Software or any part thereof, including modifications and/or derivative works of this software shall remain 
+the intellectual property of the Software Provider at all times. It is agreed that the document grants 
+the Licensee access and use of the binary code for the software listed. However, Actility as Software owner 
+remains the holder of intellectual property rights to the Software. 
+
+
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL ACTILITY BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
