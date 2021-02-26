@@ -10,11 +10,9 @@ Main steps are:
 * [Contact Actility Team to create a free account and play with FUOTA service](#Contact-Actility-Team-to-create-a-free-account-and-play-with-FUOTA-service)
 
 # Get a validated device
-Buy following parts:
+Get and assemble following parts together:
 * ST MCU development board NUCLEO-L476RG. https://www.st.com/en/evaluation-tools/nucleo-l476rg.html
 * Semtech LoRa shield SX1272MB2DAS. https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1272mb2das  
-
-and assemble the 2 parts together.
 
 # How to compile a device firmware (for Windows)
 * Install STM32Cube IDE: https://www.st.com/en/development-tools/stm32cubeide.html
