@@ -7,7 +7,7 @@ Main steps are:
 * [How to compile a device firmware (for Windows)](#How-to-compile-a-device-firmware-for-Windows)
 * [Load device firmware onto device](#Load-device-firmware-onto-device)
 * [How to customize device devEUI/JoinEUI/AppKey/GenAppKey and ISM band](#How-to-customize-device-devEUIJoinEUIAppKeyGenAppKey-and-ISM-band)
-* [Contact Actility Team to create a free account and FUOTA service](#Contact-Actility-Team-to-create-a-free-account-and-FUOTA-service)
+* [Contact Actility Team to create a free account and play with FUOTA service](#Contact-Actility-Team-to-create-a-free-account-and-play-with-FUOTA-service)
 
 # Get a validated device
 Buy following parts:
@@ -52,5 +52,5 @@ Side note:
     * In `Symbols` tab, adapt the symbols. For example, for US915, set `ACTIVE_REGION=LORAMAC_REGION_US915`, create symbol `REGION_US915` and delete symbol `REGION_EU868`
     * Recompile the firmware by executing the last step of section [How to compile a device firmware (for Windows)](#How-to-compile-a-device-firmware-for-Windows)
     
-# Contact Actility Team to create a free account and FUOTA service
+# Contact Actility Team to create a free account and play with FUOTA service
 Send an email to partners.fuota@actility.com to ask for a free account and start playing with LoRaWAN FUOTA
