@@ -1,6 +1,7 @@
 # Introduction
 This git repository contains all needed information to do LoRaWAN FUOTA (Firmware Update Over The Air) with Actility FUOTA service.  
-EU868, US916 and AS923 ISM bands are supported.
+EU868, US916 and AS923 ISM bands are supported.  
+This device code is based on ST device code v1.3.1, available [here](https://www.st.com/en/embedded-software/i-cube-lrwan.html)
 
 Main steps are:
 * [Get a device](#get-a-device)
