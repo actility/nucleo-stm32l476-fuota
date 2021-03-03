@@ -139,34 +139,29 @@ will be lifted in the future.
 
 # Software installation and configuration
 
-• Install STM32Cube IDE:
+- Install STM32Cube IDE:
 https://www.st.com/en/development-tools/stm32cubeide.html
 
-• Clone this git repository (git@github.com:actility/nucleo-stm32l476-fuota.git
+- Clone this git repository (git@github.com:actility/nucleo-stm32l476-fuota.git
 or https://github.com/actility/nucleo-stm32l476-fuota.git)
 
-• Start STM32CubeIDE application
+- Start STM32CubeIDE application
 
-• In File \> Open Project from File system, press Directory and select the
-following project locations:
+- In File \> Open Project from File system, press Directory and select the
+following project locations:  
 
-–
-\<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\2_Images_SECoreBin\\SW4STM32\\2_Images_SECoreBin
+    - \<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\2_Images_SECoreBin\\SW4STM32\\2_Images_SECoreBin  
+    - \<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\2_Images_SBSFU\\SW4STM32\\2_Images_SBSFU  
+    - \<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\Fuota\\SW4STM32\\sx1272mb2das
 
-–
-\<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\2_Images_SBSFU\\SW4STM32\\2_Images_SBSFU
-
-–
-\<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\Fuota\\SW4STM32\\sx1272mb2das
-
-• In Project explorer window, click on the “Build” button for projects In below
+- In Project explorer window, click on the “Build” button for projects In below
 order:
 
-– 2_Images_SECoreBin
+    - 2_Images_SECoreBin
 
-– 2_Images_SBSFU
+    - 2_Images_SBSFU
 
-• In Project explorer window, under the project sx1272mb2das, double click on
+- In Project explorer window, under the project sx1272mb2das, double click on
 Build Targets \> all
 
 Following configuration options could be edited to adjust device code
