@@ -191,13 +191,13 @@ In order to configure generic project options:
 In order to customize the devEUI/JoinEUI/AppKey/GenAppKey device parameters use
 following procedure:
 
-Edit
+-    Edit
 `<root_dir>\Projects\STM32L476RG-Nucleo\Applications\LoRaWAN_Fuota1\Fuota\LoRaWAN\App\inc\Commissioning.h`
 
--   Modify one of these parameters: `LORAWAN_DEVICE_EUI`, `LORAWAN_JOIN_EUI`,
+-   Customize these parameters: `LORAWAN_DEVICE_EUI`, `LORAWAN_JOIN_EUI`,
     `LORAWAN_APP_KEY`, `LORAWAN_GEN_APP_KEY`
 
--   Recompile the firmware by executing the last step of section XXX
+-   Rebuild the project sx1272mb2das
 
 *Fragmentation decoder configuration*
 
@@ -246,10 +246,10 @@ In order to flash compiled binary into device use following procedure:
         -   Click `Disconnect`
 
 In order to verify that device correctly operates after flashing you will need
-to connect to the device virtual COM port. You should do it before flashing. To
-obtain COM port number:
+to connect to the device virtual COM port. You should do it before flashing. On 
+Windows, to obtain COM port number:
 
--   Press Alt-X and select “Device manager”
+-   Press Win+X and select “Device manager”
 
 -   In the section “Ports (COM and LPT)” look for COM port with description
     “STLink Virtual COM Port” and note its number in parenthesis, e.g. COM8.
