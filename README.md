@@ -197,8 +197,6 @@ following procedure:
 -   Customize these parameters: `LORAWAN_DEVICE_EUI`, `LORAWAN_JOIN_EUI`,
     `LORAWAN_APP_KEY`, `LORAWAN_GEN_APP_KEY`
 
--   Rebuild the project sx1272mb2das
-
 *Fragmentation decoder configuration*
 
 Fragmentation decoder configuration should be adjusted if you want to adapt
