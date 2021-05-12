@@ -289,7 +289,7 @@ MAC_VERSION= 04.04.02.00
 HW_VERSION= 01.BA.35.01
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# Using firmware with RMC server
+# Using firmware with FUOTA server
 
 In order test firmware update you first will need to configure full firmware
 update campaign. Please, refer to “Actility ThingPark FUOTA User Guide” Section
