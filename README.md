@@ -292,7 +292,7 @@ HW_VERSION= 01.BA.35.01
 # Using firmware with FUOTA server
 
 In order test firmware update you first will need to configure full firmware
-update campaign. Please, refer to ThingPark FUOTA documentation available [here](https://www.actility.com/thingpark-documentation-portal/).
+update campaign. Please, refer to ThingPark FUOTA documentation available [here](https://www.actility.com/thingpark-documentation-portal/).  
 During the campaign creation you will be asked for firmware file to download.
 Use
 \<root\_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\Fuota\\Binary\\UserApp.sfb
