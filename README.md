@@ -154,15 +154,14 @@ following project locations:
     - \<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\2_Images_SBSFU\\SW4STM32\\2_Images_SBSFU  
     - \<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\Fuota\\SW4STM32\\sx1272mb2das
 
-- In Project explorer window, click on the “Build” button for projects In below
-order:
+- In Project explorer window, right click on project name listed below and then
+click the “Build” button. Do it for every project in order:
 
     - 2_Images_SECoreBin
 
     - 2_Images_SBSFU
 
-- In Project explorer window, under the project sx1272mb2das, double click on
-Build Targets \> all
+    - sx1272mb2das
 
 Following configuration options could be edited to adjust device code
 configuration for specific requirements:
