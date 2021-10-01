@@ -147,8 +147,10 @@ or <https://github.com/actility/nucleo-stm32l476-fuota.git>)
 
 - Start STM32CubeIDE application
 
-- In `File` \> `Open Projects from File system`, press Directory and select the
-following project locations:
+- In `File` \> `Open Projects from File system`, make sure that 
+`Search for nested projects` is enabled, press `Directory`, and select the
+directory with cloned git repository. In the list with found projects unselect
+the first project and select the following projects:
 
     - `<root_dir>\Projects\STM32L476RG-Nucleo\Applications\LoRaWAN_Fuota1\2_Images_SECoreBin\SW4STM32\2_Images_SECoreBin`
     - `<root_dir>\Projects\STM32L476RG-Nucleo\Applications\LoRaWAN_Fuota1\2_Images_SBSFU\SW4STM32\2_Images_SBSFU`
