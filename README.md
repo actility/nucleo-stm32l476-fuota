@@ -147,6 +147,8 @@ or <https://github.com/actility/nucleo-stm32l476-fuota.git>)
 
 - Start STM32CubeIDE application
 
+- Close welcome screen tab (the `Information Center`) if any
+
 - In `File` \> `Open Projects from File system`, make sure that 
 `Search for nested projects` is enabled, press `Directory`, and select the
 directory with cloned git repository. In the list with found projects unselect
