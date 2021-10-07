@@ -60,11 +60,11 @@ transceiver. List of supported platforms will be extended in the future.
 
 In order to run device code, get and assemble following parts together:
 
--   **ST MCU development board NUCLEO-L476RG.**
-    https://www.st.com/en/evaluation-tools/nucleo-l476rg.html
+-   **[ST MCU development board NUCLEO-L476RG](https://www.st.com/en/evaluation-tools/nucleo-l476rg.html).**
+    
 
--   **Semtech LoRa shield SX1272MB2DAS.**
-    https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1272mb2das
+-   **[Semtech LoRa shield SX1272MB2DAS](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1272mb2das).**
+    
 
 *MCU flash requirements*
 
@@ -140,29 +140,32 @@ will be lifted in the future.
 # Software installation and configuration
 
 - Install STM32Cube IDE:
-https://www.st.com/en/development-tools/stm32cubeide.html
+<https://www.st.com/en/development-tools/stm32cubeide.html>
 
-- Clone this git repository (git@github.com:actility/nucleo-stm32l476-fuota.git
-or https://github.com/actility/nucleo-stm32l476-fuota.git)
+- Clone this git repository (`git@github.com:actility/nucleo-stm32l476-fuota.git`
+or <https://github.com/actility/nucleo-stm32l476-fuota.git>)
 
 - Start STM32CubeIDE application
 
-- In File \> Open Project from File system, press Directory and select the
-following project locations:  
+- Close welcome screen tab (the `Information Center`) if any
 
-    - \<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\2_Images_SECoreBin\\SW4STM32\\2_Images_SECoreBin  
-    - \<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\2_Images_SBSFU\\SW4STM32\\2_Images_SBSFU  
-    - \<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\Fuota\\SW4STM32\\sx1272mb2das
+- In `File` \> `Open Projects from File system`, make sure that 
+`Search for nested projects` is enabled, press `Directory`, and select the
+directory with cloned git repository. In the list with found projects unselect
+the first project and select the following projects:
 
-- In Project explorer window, click on the “Build” button for projects In below
-order:
+    - `<root_dir>\Projects\STM32L476RG-Nucleo\Applications\LoRaWAN_Fuota1\2_Images_SECoreBin\SW4STM32\2_Images_SECoreBin`
+    - `<root_dir>\Projects\STM32L476RG-Nucleo\Applications\LoRaWAN_Fuota1\2_Images_SBSFU\SW4STM32\2_Images_SBSFU`
+    - `<root_dir>\Projects\STM32L476RG-Nucleo\Applications\LoRaWAN_Fuota1\Fuota\SW4STM32\sx1272mb2das`
+
+- In Project explorer window, right click on project name listed below and then
+click the “Build” button. Do it for every project in order:
 
     - 2_Images_SECoreBin
 
     - 2_Images_SBSFU
 
-- In Project explorer window, under the project sx1272mb2das, double click on
-Build Targets \> all
+    - sx1272mb2das
 
 Following configuration options could be edited to adjust device code
 configuration for specific requirements:
@@ -188,7 +191,7 @@ In order to configure generic project options:
 
 *Device credentials configuration*
 
-In order to customize the devEUI/JoinEUI/AppKey/GenAppKey device parameters use
+In order to customize the `devEUI`/`JoinEUI`/`AppKey`/`GenAppKey` device parameters use
 following procedure:
 
 -    Edit
@@ -218,7 +221,7 @@ size with selected fragmentation decoder configuration.
 To customize fragmentation decoder parameters:
 
 -   Edit
-    \<root_dir\>\\Middlewares\\Third_Party\\LoRaWAN\\Patterns\\Advanced\\LmHandler\\packages\\FragDecoder.h
+    `<root_dir>\Middlewares\Third_Party\LoRaWAN\Patterns\Advanced\LmHandler\\ackages\FragDecoder.h`
 
 | **Symbol**          | **Description**                                     | **Setting**                    |
 |---------------------|-----------------------------------------------------|--------------------------------|
@@ -231,7 +234,7 @@ To customize fragmentation decoder parameters:
 In order to flash compiled binary into device use following procedure:
 
 -   Install STM32Cube Programmer:
-    https://www.st.com/en/development-tools/stm32cubeprog.html
+    <https://www.st.com/en/development-tools/stm32cubeprog.html>
 
 -   Start STM32Cube Programmer
 
@@ -295,7 +298,7 @@ In order test firmware update you first will need to configure full firmware
 update campaign. Please, refer to ThingPark FUOTA documentation available [here](https://www.actility.com/thingpark-documentation-portal/).  
 During the campaign creation you will be asked for firmware file to download.
 Use
-\<root\_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\Fuota\\Binary\\UserApp.sfb
+`<root_dir>\Projects\STM32L476RG-Nucleo\Applications\LoRaWAN_Fuota1\Fuota\Binary\UserApp.sfb`
 in this case.
 
 To created Smart Delta update binary, you will need to specify two files of
@@ -306,14 +309,14 @@ binaries:
     firmware and first start”.
 
 -   Use
-    \<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\Fuota\\Binary\\UserApp.sfb
+    `<root_dir>\Projects\STM32L476RG-Nucleo\Applications\LoRaWAN_Fuota1\Fuota\Binary\UserApp.sfb`
     to create “from” file as described in Section 3.13 of the User Guide.   
     During a file creation use application version specified in
-    \<root_dir\>\\Projects\\STM32L476RG-Nucleo\\Applications\\LoRaWAN_Fuota1\\Fuota\\LoRaWAN\\App\\inc\\version.h
+    `<root_dir>\Projects\STM32L476RG-Nucleo\Applications\LoRaWAN_Fuota1\Fuota\LoRaWAN\App\inc\version.h`
     when asked.
 
 -   Change something in device source code and update version in version.h file.
-    It is recommended to update just \__APP_VERSION_SUB2 symbol. Increment it by
+    It is recommended to update just `__APP_VERSION_SUB2` symbol. Increment it by
     one for example.
 
 -   Build new firmware image. Use UserApp.sfb from this build to create “to”
