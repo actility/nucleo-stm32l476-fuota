@@ -221,7 +221,7 @@ size with selected fragmentation decoder configuration.
 To customize fragmentation decoder parameters:
 
 -   Edit
-    `<root_dir>\Middlewares\Third_Party\LoRaWAN\Patterns\Advanced\LmHandler\\packages\FragDecoder.h`
+    `<root_dir>\Middlewares\Third_Party\LoRaWAN\Patterns\Advanced\LmHandler\packages\FragDecoder.h`
 
 | **Symbol**          | **Description**                                     | **Setting**                    |
 |---------------------|-----------------------------------------------------|--------------------------------|
