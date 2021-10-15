@@ -1,0 +1,6 @@
+org.eclipse.*.prefs
+com.st.*.prefs
+*.bin
+Binary/
+Debug/
+output.txt
