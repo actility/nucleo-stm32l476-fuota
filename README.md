@@ -139,7 +139,7 @@ will be lifted in the future.
 
 # Software installation and configuration
 
-- Install STM32Cube IDE:
+- Install STM32Cube IDE 1.7.0:
 <https://www.st.com/en/development-tools/stm32cubeide.html>
 
 - Clone this git repository (`git@github.com:actility/nucleo-stm32l476-fuota.git`
@@ -233,7 +233,7 @@ To customize fragmentation decoder parameters:
 
 In order to flash compiled binary into device use following procedure:
 
--   Install STM32Cube Programmer:
+-   Install STM32Cube Programmer 2.8.0:
     <https://www.st.com/en/development-tools/stm32cubeprog.html>
 
 -   Start STM32Cube Programmer
