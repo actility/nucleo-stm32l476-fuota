@@ -464,27 +464,23 @@ Return values:
 
 # Appendix B. Porting considerations
 
-Porting of the FUOTA device code to the new ST Microelectronics MCUs require prior evaluation of flash and RAM available 
-on these platforms and flash sector size.
+Porting this FUOTA device code to another ST Microelectronics MCU requires prior evaluation of flash and RAM 
+available on these platforms and flash sector size.
 
-Current configuration of the code if directly ported to other platform requires splitting of
-available flash size into 3 equally sized regions: active slot, update slot and swap slot.
-For example if you have 256 KB of flash actual firmware size could be no larger than around 85 KBytes.
-If you do not plan full firmware updates you can try to set swap size to the size or largest allowable 
-incremental update size. Although this small swap size was not actually tested. 
-Future releases of the firmware will support firmware download (either full image orincremental update)
-directly into update image slot and allow to set swap region to very small numbers like several flash pages
-and still allow full firmware image updates.
+If ported to another platform, current configuration of the code requires splitting of
+available flash into 3 equally sized regions: active slot, update slot and swap slot.  
+For example, with 256 KB of flash, actual firmware size could be not be larger than around 85 KBytes.  
 
-RAM required by this code (not counting user applications or RTOS) consists of RAM required for Smart Delta (r) 
-and RAM required for fragmentation decoder. You can calculate RAM required for fragmentation decoder
-using guidelines in the section "Fragmentation algorithm RAM overhead calculation". 2,3 KB of RAM is 
-required for Smart Delta (r) with optimal compression requires. Consider this total RAM overhead when planning
+If only smart delta updates are to be supported, size of swap slot can be set to the size of largest allowable 
+incremental update size.  
+Be aware that small size of swap slot has not been tested.  
+
+RAM required by this code (without user applications or RTOS) consists of RAM required for Smart Delta (r) 
+and RAM required for fragmentation decoder. RAM required for fragmentation decoder can be calculated
+using guidelines in section "Fragmentation algorithm RAM overhead calculation". 2,3 KB of RAM is 
+required for Smart Delta (r) with optimal compression. Consider this total RAM overhead when planning
 integration. 
 
-Current code is written with equally divided small size flash pages in mind. If the MCUs considered for porting
-has flash pages of non-equal size and especially of large size it could require complete redesign of 
-flash handling operations and potentially affect RAM requirements and flash organization.
-
-
-
+Current code is written with equally divided small size flash pages in mind. If an MCU considered for porting
+has flash pages of non-equal size and especially of large size, it could require complete redesign of 
+flash handling operations and potentially impact RAM requirements and flash organization.
