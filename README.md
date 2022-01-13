@@ -462,6 +462,25 @@ Return values:
 | fotaTargetOverflow    | New image area overflowed, patching impossible                                        |
 | fotaTargetWriteFailed | Byte write error, patching must be aborted (retries not implemented in patching core) |
 
-# Appendix B. Porting 
+# Appendix B. Porting considerations
 
-TBD
+Porting this FUOTA device code to another ST Microelectronics MCU requires prior evaluation of flash and RAM 
+available on these platforms and flash sector size.
+
+If ported to another platform, current configuration of the code requires splitting of
+available flash into 3 equally sized regions: active slot, update slot and swap slot.  
+For example, with 256 KB of flash, actual firmware size could be not be larger than around 85 KBytes.  
+
+If only smart delta updates are to be supported, size of swap slot can be set to the size of largest allowable 
+incremental update size.  
+Be aware that small size of swap slot has not been tested.  
+
+RAM required by this code (without user applications or RTOS) consists of RAM required for Smart Delta (r) 
+and RAM required for fragmentation decoder. RAM required for fragmentation decoder can be calculated
+using guidelines in section "Fragmentation algorithm RAM overhead calculation". 2,3 KB of RAM is 
+required for Smart Delta (r) with optimal compression. Consider this total RAM overhead when planning
+integration. 
+
+Current code is written with equally divided small size flash pages in mind. If an MCU considered for porting
+has flash pages of non-equal size and especially of large size, it could require complete redesign of 
+flash handling operations and potentially impact RAM requirements and flash organization.
