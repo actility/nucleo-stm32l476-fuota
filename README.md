@@ -84,7 +84,7 @@ support firmware update. These regions are:
     is not supported its size could be set to largest supported incremental
     update size.
 
-Default configuration of device code sets size of each region to 303K. For more
+Default configuration of device code sets size of each region to 3K. For more
 details about memory mapping planning see “Appendix B. Porting”.
 
 *Fragmentation algorithm RAM overhead calculation*
